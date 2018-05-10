@@ -1,0 +1,16 @@
+<li class="list-group-item">
+
+  <h3>DICOM server</h3>
+  <h4>IP :
+    <input type="text" class="form-control" [(ngModel)]="serverIP"></h4>
+  <h4>Port :
+    <input type="text" class="form-control" [(ngModel)]="serverPort"></h4>
+  <h4>AET :
+    <input type="text" class="form-control" [(ngModel)]="serverAET"></h4>
+
+  <button class="btn btn-success" *ngIf="authStatus" (click)="onQueryRetrieve()">Next</button>
+  <button class="btn btn-success right"  *ngIf="authStatus" (click)="onEcho()">C-Echo</button>
+
+</li>
+<div *ngIf="!authStatus"> Veuillez vous authentifier pour effectuer une requête
+</div>

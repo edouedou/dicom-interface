@@ -1,0 +1,13 @@
+<li class="list-group-item">
+
+  <h3>DICOM server</h3>
+  <h4>IP :
+    <input type="text" class="form-control" [(ngModel)]="targetIP"></h4>
+  <h4>URL :
+    <input type="text" class="form-control" [(ngModel)]="targetURL"></h4>
+
+  <button class="btn btn-success right"  *ngIf="authStatus" (click)="onEcho()">C-Echo</button>
+
+</li>
+<div *ngIf="!authStatus"> Veuillez vous authentifier pour effectuer une requête
+</div>

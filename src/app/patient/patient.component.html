@@ -1,0 +1,11 @@
+<li class="list-group-item">
+  <div style="width:20px;height:20px;background-color:red;"
+       *ngIf="patientSex === 'F'"></div>
+  <h4>Name : {{ patientName }}</h4>
+  <h4>Patient ID : {{ patientID }}</h4>
+  <h4>Sex : {{ getPatientSex() }}</h4>
+  <a [routerLink]="[id]">Détail</a>
+
+  <button class="btn btn-sm btn-success"
+          (click)="onDeletePatientName()">Delete name</button>
+</li>

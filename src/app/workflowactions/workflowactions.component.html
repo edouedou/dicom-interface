@@ -1,0 +1,48 @@
+<li class="list-group-item">
+
+  <h3>Study Resources and actions</h3>
+  <h4>Create UPS :
+    <input type="text" class="form-control" [(ngModel)]="AffectedSOPInstanceUID"></h4>
+  <button class="btn btn-success"(click)="onAction1()">Next</button>
+
+  <h4>Update UPS
+    <input type="text" class="form-control" [(ngModel)]="transaction"></h4>
+  <button class="btn btn-success"(click)="onAction2()">Next</button>
+
+  <h4>Search for UPS :
+    <input type="text" class="form-control" [(ngModel)]="UPSInstanceUID"></h4>
+  <button class="btn btn-success"(click)="onAction3()">Next</button>
+
+  <h4>Retrieve UPS :
+    <input type="text" class="form-control" [(ngModel)]="UPSInstanceUID"></h4>
+  <button class="btn btn-success"(click)="onAction4()">Next</button>
+
+  <h4>ChangeUPS State :
+    <input type="text" class="form-control" [(ngModel)]="state"></h4>
+  <button class="btn btn-success"(click)="onAction5()">Next</button>
+
+  <h4>Request UPS Cancellation :
+    <input type="text" class="form-control" [(ngModel)]="UPSInstanceUID"></h4>
+  <button class="btn btn-success"(click)="onAction6()">Next</button>
+
+  <h4>Create Subscription :
+    <input type="text" class="form-control" [(ngModel)]="AETitle"></h4>
+  <button class="btn btn-success"(click)="onAction7()">Next</button>
+
+  <h4>Suspend Global Subscription :
+  </h4>
+  <button class="btn btn-success"(click)="onAction8()">Next</button>
+
+  <h4>Delete Subscription :
+    <input type="text" class="form-control" [(ngModel)]="AETitle"></h4>
+  <button class="btn btn-success"(click)="onAction9()">Next</button>
+
+  <h4>Open Event Channel:
+    <input type="text" class="form-control" [(ngModel)]="AETitle"></h4>
+  <button class="btn btn-success"(click)="onAction10()">Next</button>
+
+  <h4>Send Event report :
+    <input type="text" class="form-control" [(ngModel)]="eventReport"></h4>
+  <button class="btn btn-success"(click)="onAction11()">Next</button>
+
+</li>

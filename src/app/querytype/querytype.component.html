@@ -1,0 +1,14 @@
+<li class="list-group-item">
+
+  <h3>Select the action type</h3>
+  <h4>Study Resources and actions
+    <input type="text" class="form-control" ></h4>
+  <button class="btn btn-success" *ngIf="authStatus" (click)="onStudyActions()">Next</button>
+
+  <h4>Workflow resources and actions
+    <input type="text" class="form-control"></h4>
+  <button class="btn btn-success" *ngIf="authStatus" (click)="onWorkflowActions()">Next</button>
+</li>
+
+<div *ngIf="!authStatus"> Veuillez vous authentifier pour effectuer une requête
+</div>

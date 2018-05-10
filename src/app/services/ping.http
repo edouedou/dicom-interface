@@ -1,0 +1,20 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection).
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+### Get request with a header
+GET https://httpbin.org/ip
+Accepts: application/json
+
+### Get request with parameter
+GET https://httpbin.org/get?show_env=1
+Accepts: application/json
+
+### Get request with environment variables
+GET {{host}}/get?show_env={{show_env}}
+Accepts: application/json
+
+###
+

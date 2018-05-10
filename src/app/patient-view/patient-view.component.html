@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>Patients</h2>
+      <ul class="list-group">
+        <!--
+        <app-patient patientID="984756783"></app-patient>
+        <app-patient patientName="Ali"></app-patient>
+        <app-patient patientName="Anna" patientSex="F"></app-patient>
+        -->
+        <app-patient *ngFor="let patient of patients, let i = index"
+                     [patientName]="patient.name"
+                     [patientSex]="patient.sex"
+                     [index]="i"
+                     [id]="patient.id"></app-patient>
+      </ul>
+      <button class="btn btn-success"
+              [disabled]="!isAuth"
+              (click)="onHome()">Home</button>
+      <button class="btn btn-danger"
+              [disabled]="!isAuth"
+              (click)="onDeleteNames()">Delete names</button>
+      <button class="btn btn-primary"
+              (click)="onSave()">Enregistrer les patients</button>
+      <button class="btn btn-primary"
+              (click)="onFetch()">Récupérer les patients</button>
+
+    </div>
+  </div>
+</div>

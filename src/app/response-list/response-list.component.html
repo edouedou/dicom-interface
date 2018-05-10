@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-xs-12">
+    <h2>Vos précédentes requêtes</h2>
+    <div class="list-group">
+      <button
+        class="list-group-item"
+        *ngFor="let response of responses; let i = index"
+        (click)="onViewBook(i)">
+        <h3 class="list-group-item-heading">
+          {{ response.texte }}
+          <button class="btn btn-default pull-right" (click)="onDeleteResponse(response)">
+            <span class="glyphicon glyphicon-minus"></span>
+          </button>
+        </h3>
+      </button>
+    </div>
+  </div>
+</div>
